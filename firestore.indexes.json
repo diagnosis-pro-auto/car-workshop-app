@@ -1,0 +1,30 @@
+{
+ "indexes": [
+ {
+ "collectionGroup": "events",
+ "queryScope": "COLLECTION",
+ "fields": [
+ {"fieldPath": "type", "order": "ASCENDING"},
+ {"fieldPath": "ts", "order": "DESCENDING"}
+ ]
+ },
+ {
+ "collectionGroup": "events",
+ "queryScope": "COLLECTION",
+ "fields": [
+ {"fieldPath": "bay_id", "order": "ASCENDING"},
+ {"fieldPath": "ts", "order": "DESCENDING"}
+ ]
+ },
+ {
+ "collectionGroup": "sessions",
+ "queryScope": "COLLECTION",
+ "fields": [
+ {"fieldPath": "active", "order": "ASCENDING"},
+ {"fieldPath": "bay_id", "order": "ASCENDING"},
+ {"fieldPath": "start_ts", "order": "DESCENDING"}
+ ]
+ }
+ ],
+ "fieldOverrides": []
+}
